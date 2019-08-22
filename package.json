@@ -1,0 +1,24 @@
+{
+  "name": "marketing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass styles.scss styles.css -w --source-map true", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaroneld/marketing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aaroneld/marketing-page/issues"
+  },
+  "homepage": "https://github.com/Aaroneld/marketing-page#readme",
+
+  "dependencies": {
+    "node-sass": "4.12.0"
+  }
+}
