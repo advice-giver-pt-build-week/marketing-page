@@ -1,15 +1,40 @@
 
 .logo {
 
-    height: 500px; 
+    height: 25vh; 
+    background-color: $grey;
+
+    header {
+
+        max-height: 100%;
+        display: flex;
+        justify-content: center;
+        
+
+        img{
+
+            object-fit: cover;
+            display: block;
+            max-width:230px;
+            max-height:30%;
+            width: auto;
+            height: auto;
+            
+            
+
+        }
+    }
 }
 
 .image {
 
     height: 33vh;
+    background-color: $light-blue;
 }
 
 .first-add-content {
 
-    height: 66vh;
+    height: 45vh;
+    margin: 0;
+    background-color: $grey;
 }

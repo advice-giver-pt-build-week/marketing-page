@@ -1,12 +1,7 @@
 {
-	"version": 3,
-	"file": "styles.css",
-	"sources": [
-		"../sass/index.scss",
-		"../sass/variables.scss",
-		"../sass/mixins.scss",
-		"../sass/landing-page.scss"
-	],
-	"names": [],
-	"mappings": "AGCA,AAAA,KAAK,CAAC;EAEF,MAAM,EAAE,KAAK,GAChB;;AAED,AAAA,MAAM,CAAC;EAEH,MAAM,EAAE,IAAI,GACf;;AAED,AAAA,kBAAkB,CAAC;EAEf,MAAM,EAAE,IAAI,GACf"
+"version": 3,
+"mappings": "AACA,KAAM;EAEF,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECCb,OAAO;EDCV,YAAO;IAEH,UAAU,EAAE,IAAI;IAChB,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,MAAM;IAGvB,gBAAG;MAEC,UAAU,EAAE,KAAK;MACjB,OAAO,EAAE,KAAK;MACd,SAAS,EAAC,KAAK;MACf,UAAU,EAAC,GAAG;MACd,KAAK,EAAE,IAAI;MACX,MAAM,EAAE,IAAI;;AAQxB,MAAO;EAEH,MAAM,EAAE,IAAI;EACZ,gBAAgB,EC7BP,OAAO;;ADgCpB,kBAAmB;EAEf,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,gBAAgB,ECjCb,OAAO",
+"sources": ["../sass/landing-page.scss","../sass/variables.scss"],
+"names": [],
+"file": "styles.css"
 }
