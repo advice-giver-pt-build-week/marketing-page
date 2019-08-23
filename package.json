@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "node-sass styles.scss styles.css -w --source-map true",
+    "watch-sass": "node-sass ./sass/index.scss ./CSS/styles.css -w --source-map true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
