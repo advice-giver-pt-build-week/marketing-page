@@ -3,27 +3,21 @@
 
     height: 25vh; 
     background-color: $grey;
-
-    header {
-
-        max-height: 100%;
-        display: flex;
-        justify-content: center;
-        
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
 
         img{
 
-            object-fit: cover;
-            display: block;
-            max-width:230px;
-            max-height:30%;
-            width: auto;
-            height: auto;
+            object-fit: contain;
+            max-width:  unquote("-webkit-calc(100% - 50px)");
+            max-height: unquote("-webkit-calc(100% - 50px)");
+            align-self: center;
             
             
 
         }
-    }
+    
 }
 
 .image {
