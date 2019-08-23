@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "node-sass styles.scss styles.css -w --source-map true", 
+    "watch-sass": "node-sass styles.scss styles.css -w --source-map true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +17,6 @@
     "url": "https://github.com/Aaroneld/marketing-page/issues"
   },
   "homepage": "https://github.com/Aaroneld/marketing-page#readme",
-
   "dependencies": {
     "node-sass": "4.12.0"
   }
