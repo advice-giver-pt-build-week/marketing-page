@@ -1,5 +1,6 @@
 body .logo {
   margin: 3% auto 0 auto;
+  max-width: 1200px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 25vh;
@@ -7,27 +8,71 @@ body .logo {
   max-height: 100%;
   display: flex;
   justify-content: center; }
+  @media (min-width: 768px) {
+    body .logo {
+      display: none; } }
   body .logo img {
     object-fit: contain;
-    max-width: -webkit-calc(100% - 50px);
-    max-height: -webkit-calc(100% - 50px);
+    max-width: calc(100% - 50px);
+    max-height: calc(100% - 50px);
     align-self: center; }
+body .logo-signup {
+  display: none; }
+  @media (min-width: 768px) {
+    body .logo-signup {
+      display: flex;
+      margin: 3% auto 0 auto;
+      max-width: 1200px;
+      width: 95vw;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      height: 8vh;
+      background-color: #44525A;
+      justify-content: space-between; }
+      body .logo-signup img {
+        max-width: calc(35% - 50px);
+        margin-top: 3%; }
+      body .logo-signup p {
+        text-align: center;
+        border: 2px solid black;
+        padding: 10% 8% 12% 8%;
+        margin-top: 20%;
+        background-color: #f5f5f5;
+        color: #0D3F5A; }
+      body .logo-signup .image-div {
+        flex-basis: 90%; }
+      body .logo-signup .button {
+        margin-top: 1.3%;
+        flex-basis: 10%; } }
+  @media (min-width: 992px) {
+    body .logo-signup {
+      width: 100%;
+      max-width: 100%;
+      margin: 0; }
+      body .logo-signup img {
+        margin-top: 1%; }
+      body .logo-signup p {
+        margin-top: 0; } }
 body .image {
   margin: 3% auto 0 auto;
+  max-width: 1200px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 33vh;
-  background-color: #3697CA;
+  background-color: #0D3F5A;
   display: flex;
   justify-content: space-around;
   align-items: center; }
   body .image img {
     object-fit: contain;
-    max-width: -webkit-calc(100% - 50px);
-    max-height: -webkit-calc(100% - 50px);
+    max-width: calc(100% - 50px);
+    max-height: calc(100% - 50px);
     align-self: center; }
+  @media (min-width: 768px) {
+    body .image {
+      display: none; } }
 body .first-add-content {
   margin: 3% auto 0 auto;
+  max-width: 1200px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 45vh;
@@ -35,11 +80,47 @@ body .first-add-content {
   display: flex;
   text-align: center;
   flex-flow: column;
-  justify-content: space-around; }
-  body .first-add-content * {
-    color: #0D3F5A; }
+  justify-content: space-around;
+  padding: 5% 0; }
+  body .first-add-content p {
+    color: #0D3F5A;
+    font-size: 4vw; }
+  body .first-add-content img {
+    display: none; }
+  @media (min-width: 768px) {
+    body .first-add-content {
+      height: 75vh;
+      justify-content: space-between; }
+      body .first-add-content h1 {
+        font-size: 8vw; }
+      body .first-add-content p {
+        font-size: 3vw; }
+      body .first-add-content img {
+        display: inherit;
+        max-width: calc(100% - 50px);
+        max-height: calc(100% - 50px); }
+        body .first-add-content img:hover {
+          transform: scale(1.065);
+          transition: 2s; }
+      body .first-add-content .row {
+        padding: 5%; }
+      body .first-add-content .column-1 p {
+        padding-top: 5%; }
+      body .first-add-content .column-2 p {
+        padding-bottom: 5%; } }
+  @media (min-width: 992px) {
+    body .first-add-content P {
+      font-size: 2vh; }
+    body .first-add-content img {
+      display: inherit;
+      max-width: calc(100% - 50px);
+      max-height: calc(50% - 50px); }
+    body .first-add-content .row .col-md-6 {
+      display: flex;
+      flex-flow: column; } }
 body #text-carousel {
   margin: 3% auto 0 auto;
+  max-width: 1200px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 50px;
@@ -48,7 +129,13 @@ body #text-carousel {
     min-height: 112px; }
     body #text-carousel .carousel-inner .carousel-item p {
       display: inline;
-      color: #f5f5f5; }
+      color: #f5f5f5;
+      font-size: 4vw; }
+  @media (min-width: 768px) {
+    body #text-carousel {
+      width: 25vw; }
+      body #text-carousel .carousel-inner .carousel-item p {
+        font-size: 1vh; } }
 body .sticky-login {
   position: sticky;
   bottom: 0;
@@ -57,8 +144,10 @@ body .sticky-login {
   justify-content: center;
   border: 2px solid black;
   background-color: #3697CA;
-  box-shadow: inset 0 0 5px black;
   z-index: 100; }
+  @media (min-width: 768px) {
+    body .sticky-login {
+      display: none; } }
   body .sticky-login * {
     text-align: center;
     border: 2px solid black;
