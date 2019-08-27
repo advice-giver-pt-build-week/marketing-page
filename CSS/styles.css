@@ -1,6 +1,14 @@
+@media (min-width: 768px) {
+  body body {
+    max-width: 768px; } }
+
+@media (min-width: 992px) {
+  body body {
+    max-width: 1000px; } }
+
 body .logo {
-  margin: 3% auto 0 auto;
-  max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1000px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 25vh;
@@ -22,10 +30,12 @@ body .logo-signup {
   @media (min-width: 768px) {
     body .logo-signup {
       display: flex;
-      margin: 3% auto 0 auto;
-      max-width: 1200px;
+      margin: 0 auto;
+      max-width: 1000px;
       width: 95vw;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width: 90%;
+      margin: 0 auto;
       height: 8vh;
       background-color: #44525A;
       justify-content: space-between; }
@@ -46,17 +56,16 @@ body .logo-signup {
         flex-basis: 10%; } }
   @media (min-width: 992px) {
     body .logo-signup {
-      width: 100%;
-      max-width: 100%;
-      margin: 0; }
+      max-width: 1000px;
+      padding-top: 2%; }
       body .logo-signup img {
         margin-top: 1%; }
       body .logo-signup p {
         margin-top: 0; } }
 
 body .image {
-  margin: 3% auto 0 auto;
-  max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1000px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 33vh;
@@ -74,8 +83,8 @@ body .image {
       display: none; } }
 
 body .first-add-content {
-  margin: 3% auto 0 auto;
-  max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1000px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 45vh;
@@ -93,7 +102,8 @@ body .first-add-content {
   @media (min-width: 768px) {
     body .first-add-content {
       height: 75vh;
-      justify-content: space-between; }
+      justify-content: space-between;
+      max-width: 90%; }
       body .first-add-content h1 {
         font-size: 8vw; }
       body .first-add-content p {
@@ -123,8 +133,8 @@ body .first-add-content {
       flex-flow: column; } }
 
 body #text-carousel {
-  margin: 3% auto 0 auto;
-  max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1000px;
   width: 95vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 50px;
