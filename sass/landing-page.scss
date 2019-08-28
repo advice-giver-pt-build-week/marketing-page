@@ -140,8 +140,9 @@ body {
         p{
 
             color: $drk-blue; 
-            font-size: 4vw;
+            font-size: 3vw;
             text-align: left;
+            padding: 0 3%;
 
          
         }
@@ -164,7 +165,8 @@ body {
             p {
 
                 font-size: 3vw;
-                border: .5px solid black;
+                border: .5px solid $light-blue;
+                border-radius: 5px;
             }
 
             img {
@@ -181,9 +183,13 @@ body {
             .row {
 
                 padding: 5%;
+                
             }
 
             .column-1 {
+
+                border-right: 1px solid $light-blue;
+                border-bottom: 1px solid $light-blue;
 
                 p {
                     margin-top: 5%; 
@@ -192,6 +198,9 @@ body {
             }
 
             .column-2 {
+
+                border-bottom: 1px solid $light-blue;
+               
 
                 p {
                     padding: 5%;
@@ -250,6 +259,12 @@ body {
                 .column-1 {
 
                     border-right: .5px solid black;
+                    border-bottom: none;
+                }
+
+                .column-2 {
+
+                    border-bottom: none;
                 }
             }
         }
@@ -259,7 +274,13 @@ body {
 
         @include outside-structure;
         background-color: $grey;
-        height: 25%;
+        
+        min-height: 260px;
+        
+        @media (min-width: 768px){
+
+            
+        }
 
         @media (min-width: 992px){
 
@@ -271,22 +292,24 @@ body {
     #text-carousel{
 
         @include outside-structure;
-        padding: 50px;
+        padding: 0 5%;
+        padding-top: 23%;
+        width: 100%;
         background-color: $grey;
         
         
         .carousel-inner {
 
-            min-height: 112px;
         
             .carousel-item {
                 
 
-                p{
-                    
+                p{ 
+
                     display: inline;
                     color: $base-color;
                     font-size: 4vw;
+                    margin: 0;
                 }
             }
         }
@@ -294,10 +317,13 @@ body {
         @media (min-width: 768px) {
 
             width: 35%;
+            padding-top: 9%;
 
             .carousel-inner {
 
+
                 .carousel-item{
+
                 
                     p {
                         font-size: 1.2vh;
@@ -309,6 +335,7 @@ body {
         @media (min-width: 992px){
 
             width: 30%;
+            padding-top: 6.5%;
 
             .carousel-inner {
 
