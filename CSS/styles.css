@@ -3,7 +3,6 @@ body .logo {
   max-width: 1200px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 25vh;
   background-color: #44525A;
   max-height: 100%;
   display: flex;
@@ -16,6 +15,7 @@ body .logo {
     max-width: calc(100% - 50px);
     max-height: calc(100% - 50px);
     align-self: center; }
+
 body .logo-signup {
   display: none; }
   @media (min-width: 768px) {
@@ -55,6 +55,7 @@ body .logo-signup {
       width: 100%;
       max-width: 1500px;
       margin: 0 auto; } }
+
 body .image {
   margin: 3% auto 0 auto;
   max-width: 1200px;
@@ -73,6 +74,7 @@ body .image {
   @media (min-width: 768px) {
     body .image {
       display: none; } }
+
 body .first-add-content {
   margin: 3% auto 0 auto;
   max-width: 1200px;
@@ -96,7 +98,8 @@ body .first-add-content {
   @media (min-width: 768px) {
     body .first-add-content {
       height: 65%;
-      justify-content: space-between; }
+      justify-content: space-between;
+      max-width: 90%; }
       body .first-add-content h1 {
         font-size: 8vw; }
       body .first-add-content p {
@@ -148,10 +151,15 @@ body .first-add-content {
         justify-content: center;
         align-items: center; }
       body .first-add-content .row .column-1 {
+<<<<<<< HEAD
         border-right: .5px solid black;
         border-bottom: none; }
       body .first-add-content .row .column-2 {
         border-bottom: none; } }
+=======
+        border-right: .5px solid black; } }
+
+>>>>>>> 01a94fc6b2158075e27147a8a36088b8939aa33e
 body .carousel {
   margin: 3% auto 0 auto;
   max-width: 1200px;
@@ -162,6 +170,7 @@ body .carousel {
   @media (min-width: 992px) {
     body .carousel {
       width: 90%; } }
+
 body #text-carousel {
   margin: 3% auto 0 auto;
   max-width: 1200px;
@@ -188,6 +197,7 @@ body #text-carousel {
       padding-top: 6.5%; }
       body #text-carousel .carousel-inner .carousel-item p {
         font-size: 2vh; } }
+
 body .sticky-login {
   position: sticky;
   bottom: 0;
@@ -208,5 +218,17 @@ body .sticky-login {
     margin: 1.25% 0;
     background-color: #44525A;
     color: #f5f5f5; }
+
+body .jumbotron {
+  text-align: center;
+  max-width: 95%;
+  margin: 0 auto; }
+
+body .img-profiles {
+  max-width: 95%;
+  text-align: center; }
+
+body .aaron img {
+  max-width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

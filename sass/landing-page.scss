@@ -1,16 +1,13 @@
-
 body {
     
 
     .logo {
 
         @include outside-structure;
-        height: 25vh; 
         background-color: $grey;
         max-height: 100%;
         display: flex;
         justify-content: center;
-
         @media (min-width: 768px){
 
             display: none;
@@ -159,6 +156,7 @@ body {
 
             height: 65%;
             justify-content: space-between;
+            max-width: 90%;
 
             h1 {
 
