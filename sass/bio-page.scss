@@ -8,11 +8,13 @@ body {
 
     .img-profiles {
         max-width: 95%;
-        text-align: center;
+        display: flex;
+        align-content: center;
     }
 
     .aaron img {
         max-width: 50%;
+        align-self: center;
     }
 
 }

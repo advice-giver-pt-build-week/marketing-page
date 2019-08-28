@@ -209,9 +209,11 @@ body .jumbotron {
 
 body .img-profiles {
   max-width: 95%;
-  text-align: center; }
+  display: flex;
+  align-content: center; }
 
 body .aaron img {
-  max-width: 50%; }
+  max-width: 50%;
+  align-self: center; }
 
 /*# sourceMappingURL=styles.css.map */
