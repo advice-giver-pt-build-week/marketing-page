@@ -1,20 +1,29 @@
-body {
+.bio {
 
-    .jumbotron { 
-        text-align: center;
+    .jumbotron-bio {
+        @include outside-structure; 
         max-width: 95%;
         margin: 0 auto;
+        background-color: $base-color;
+        display: flex;
+        justify-content: center;
+    }
+
+    .jumbotron {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .img-profiles {
-        max-width: 95%;
-        display: flex;
-        align-content: center;
+        @include outside-structure;
+        text-align: center;
     }
 
-    .aaron img {
+    .voldorb-img {
         max-width: 50%;
-        align-self: center;
     }
+
+
 
 }
