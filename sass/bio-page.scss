@@ -1,20 +1,37 @@
+<<<<<<< HEAD
 .body {
+=======
+.bio {
+>>>>>>> 2d5c4b6212f7ad3fb30f336fad8e77aae123d1f4
 
-    .jumbotron { 
-        text-align: center;
+    .jumbotron-bio {
+        @include outside-structure; 
         max-width: 95%;
         margin: 0 auto;
+        background-color: $base-color;
+        display: flex;
+        justify-content: center;
+    }
+
+    .jumbotron {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .img-profiles {
-        max-width: 95%;
+        @include outside-structure;
         text-align: center;
     }
 
-    .aaron img {
+    .voldorb-img {
         max-width: 50%;
     }
 
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2d5c4b6212f7ad3fb30f336fad8e77aae123d1f4
 
 }
