@@ -264,8 +264,9 @@ body {
                 border-bottom: 1px solid $light-blue;
 
                 p {
-                    margin-top: 5%; 
+                     
                     padding: 5%;
+                    margin-bottom: 5%;
                 }
             }
 
@@ -275,8 +276,9 @@ body {
                
 
                 p {
+                    margin-top: 5%;
                     padding: 5%;
-                    margin-bottom: 5%;
+                   
                 }
             }
         }
@@ -348,7 +350,7 @@ body {
         @include outside-structure;
         margin-bottom: 5%;
         
-        
+        display:none;
        
         
         
@@ -386,6 +388,7 @@ body {
 
         @media (min-width: 768px) {
 
+            display: block;
 
             .carousel-inner {
 
@@ -418,7 +421,30 @@ body {
                 }
             }
         }
-    } 
+    }
+    
+    .feature-div {
+
+        @include outside-structure;
+        background: $grey;
+        padding: 2.5% 3%;
+        text-align: center;
+        color: $base-color;
+
+        p {
+
+            text-align: left;
+            font-size: 3vw;
+            color: $light-blue;
+
+            
+        }
+
+        @media(min-width:768px){
+
+            display: none;
+        }
+    }
 
     .sticky-login{
        
