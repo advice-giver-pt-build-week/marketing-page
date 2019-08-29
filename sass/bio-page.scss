@@ -1,23 +1,23 @@
 .bio {
 
-    .jumbotron-bio {
-        @include outside-structure; 
-        max-width: 95%;
-        margin: 0 auto;
-        background-color: $base-color;
-        display: flex;
-        justify-content: center;
-    }
-
-    .jumbotron {
+    .header-bio {
+        @include outside-structure;
         text-align: center;
         margin: 0 auto;
-        width: 100%;
+        height: 80%;
+        background-color: $light-blue;
+
+    }
+
+    .name-header {
+        font-size: 2rem;
+        font-family: $oswald;
     }
 
     .img-profiles {
-        margin: 0;
+        @include outside-structure;
         text-align: center;
+        background-color: $grey;
     }
 
     .voldorb-img {
