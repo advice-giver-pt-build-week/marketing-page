@@ -1,79 +1,260 @@
-/*
-Error: Invalid CSS after "...d8e77aae123d1f4": expected "{", was "}"
-        on line 37 of sass/bio-page.scss
-        from line 6 of sass/index.scss
+body p, body a {
+  font-family: "Quicksand", sans-serif; }
+body h1, body h2 {
+  font-family: "Oswald", sans-serif; }
+body .logo {
+  margin: 3% auto 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #44525A;
+  max-height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 768px) {
+    body .logo {
+      display: none; } }
+  body .logo img {
+    object-fit: contain;
+    max-width: calc(100% - 50px);
+    max-height: calc(100% - 50px);
+    margin-top: 10%;
+    align-self: center; }
+  body .logo div {
+    display: flex; }
+    body .logo div a {
+      flex: 0 0 auto;
+      text-align: center;
+      border: 2px solid black;
+      padding: 12% 12% 9% 12%;
+      margin: 0;
+      background-color: #0D3F5A;
+      color: #f5f5f5;
+      margin: 15% 0;
+      font-weight: bold; }
+body .logo-signup {
+  display: none; }
+  body .logo-signup a:hover {
+    color: palevioletred;
+    text-decoration: none; }
+  @media (min-width: 768px) {
+    body .logo-signup {
+      display: flex;
+      margin: 3% auto 0 auto;
+      max-width: 1200px;
+      width: 90%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      height: 8%;
+      padding: 1%;
+      background-color: #44525A;
+      justify-content: space-between; }
+      body .logo-signup img {
+        max-width: calc(35% - 50px); }
+      body .logo-signup a {
+        flex: 0 0 auto;
+        text-align: center;
+        padding: 5% 5% 3% 5%;
+        margin: 0;
+        color: #f5f5f5; }
+      body .logo-signup .image-div {
+        flex-basis: 70%;
+        display: flex;
+        justify-content: flex-start; }
+        body .logo-signup .image-div img {
+          align-self: center; }
+      body .logo-signup .button {
+        display: flex;
+        flex-basis: 30%;
+        justify-content: space-around; }
+        body .logo-signup .button a {
+          align-self: center;
+          font-weight: bold; } }
+  @media (min-width: 992px) {
+    body .logo-signup {
+      width: 100%;
+      margin: 0 auto; }
+      body .logo-signup .image-div {
+        display: flex;
+        flex-basis: 85%; }
+      body .logo-signup .button {
+        flex-basis: 15%; }
+        body .logo-signup .button a {
+          padding: 5% 4% 5% 4%; } }
+body .image {
+  margin: 3% auto 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 33%;
+  background-color: #0D3F5A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  body .image img {
+    object-fit: contain;
+    max-width: calc(100% - 50px);
+    max-height: calc(100% - 50px);
+    align-self: center; }
+  @media (min-width: 768px) {
+    body .image {
+      display: none; } }
+body .first-add-content {
+  margin: 3% auto 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 45%;
+  background-color: #f5f5f5;
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 5% 0;
+  overflow: hidden; }
+  body .first-add-content p {
+    color: #0D3F5A;
+    font-size: 3vw;
+    text-align: left;
+    padding: 0 3%;
+    line-height: 1.3; }
+  body .first-add-content img {
+    display: none; }
+  @media (min-width: 768px) {
+    body .first-add-content {
+      height: 65%;
+      justify-content: space-between;
+      max-width: 90%; }
+      body .first-add-content h1 {
+        font-size: 8vw; }
+      body .first-add-content p {
+        font-size: 2vw;
+        border: 0.5px solid #3697CA;
+        border-radius: 5px;
+        color: #44525A; }
+      body .first-add-content img {
+        display: inherit;
+        max-width: calc(100% - 50px);
+        max-height: calc(100% - 50px);
+        transition: scale(2); }
+      body .first-add-content .row {
+        padding: 5%; }
+      body .first-add-content .column-1 {
+        border-right: 1px solid #3697CA;
+        border-bottom: 1px solid #3697CA; }
+        body .first-add-content .column-1 p {
+          margin-top: 5%;
+          padding: 5%; }
+      body .first-add-content .column-2 {
+        border-bottom: 1px solid #3697CA; }
+        body .first-add-content .column-2 p {
+          padding: 5%;
+          margin-bottom: 5%; } }
+  @media (min-width: 992px) {
+    body .first-add-content {
+      margin-top: 3%;
+      padding: 2.5% 0; }
+      body .first-add-content p {
+        font-size: 2vh;
+        background-color: #44525A;
+        opacity: .9;
+        color: #f5f5f5; }
+      body .first-add-content img {
+        display: inherit;
+        max-width: calc(50%);
+        max-height: calc(50%); }
+      body .first-add-content h1 {
+        font-size: 6vh; }
+      body .first-add-content h2 {
+        width: 90%;
+        align-self: center;
+        border-bottom: 1px solid black;
+        margin: 0;
+        padding-bottom: 3%; }
+      body .first-add-content .row .col-md-6 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+      body .first-add-content .row .column-1 {
+        border-right: .5px solid black;
+        border-bottom: none; }
+      body .first-add-content .row .column-2 {
+        border-bottom: none; } }
+body #carouselExampleCaptions {
+  margin: 3% auto 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5%; }
+  body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    color: palevioletred;
+    font-size: 100%; }
+  body #carouselExampleCaptions .carousel-inner .carousel-item img {
+    max-width: calc(50%-5px);
+    max-height: calc(50%-5px);
+    object-fit: cover; }
+  body #carouselExampleCaptions .carousel-inner .carousel-item p {
+    display: inline;
+    color: palevioletred;
+    font-size: 100%;
+    margin: 0; }
+  @media (min-width: 768px) {
+    body #carouselExampleCaptions .carousel-inner .carousel-item p {
+      font-size: 1.2vh; } }
+  @media (min-width: 992px) {
+    body #carouselExampleCaptions .carousel-inner .carousel-item p {
+      font-size: 2vh; }
+    body #carouselExampleCaptions .carousel-inner .carousel-item img {
+      max-height: 30vw; } }
+body .sticky-login {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: #3697CA;
+  z-index: 100; }
+  @media (min-width: 768px) {
+    body .sticky-login {
+      display: none; } }
+  body .sticky-login a {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5% 10%;
+    margin: 1.25% 0;
+    background-color: #44525A;
+    color: #f5f5f5;
+    font-weight: bold; }
+  body .sticky-login a:hover {
+    background-color: #f5f5f5;
+    color: #44525A;
+    text-decoration: none; }
 
-32:     
-33: =======
-34: 
-35: >>>>>>> 2d5c4b6212f7ad3fb30f336fad8e77aae123d1f4
-36: 
-37: }
+.bio .jumbotron-bio {
+  margin: 3% auto 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center; }
+.bio .jumbotron {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%; }
+.bio .img-profiles {
+  margin: 3% auto 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center; }
+.bio .voldorb-img {
+  max-width: 50%; }
 
-Backtrace:
-sass/bio-page.scss:37
-sass/index.scss:6
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...d8e77aae123d1f4\": expected \"{\", was \"}\"\A         on line 37 of sass/bio-page.scss\A         from line 6 of sass/index.scss\A \A 32:     \A 33: =======\A 34: \A 35: >>>>>>> 2d5c4b6212f7ad3fb30f336fad8e77aae123d1f4\A 36: \A 37: }"; }
+/*# sourceMappingURL=styles.css.map */
