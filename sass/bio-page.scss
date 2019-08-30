@@ -1,5 +1,9 @@
 .bio {
 
+    .bio-logo {
+        margin-top: 0%;
+    }
+
     .header-bio {
         @include outside-structure;
         text-align: center;
@@ -9,6 +13,7 @@
 
     }
 
+
     .name-header {
         font-size: 2rem;
         font-family: $oswald;
@@ -16,16 +21,59 @@
 
     .img-profiles {
         @include outside-structure;
-        text-align: center;
+        color: $base-color;
+        padding: 2%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .bio-containers {
+        display: flex;
+        border: 2px solid black;
         background-color: $grey;
+        margin: 3% auto;
+        width: 90%;
+    }
+
+    .aaron {
+        background-color: $light-blue;
+    }
+
+    .bio-info {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 2%;
+    }
+
+    
+    .h2 {
+        text-align: center;
+        padding-top: 2%;
+    }
+
+
+    .p {
+        text-align: left;
+        padding-top: 2%;
+        width: 100%;
     }
 
     .voldorb-img {
-        max-width: 50%;
+
+        width: 40%;
+        align-self: center;
     }
+
+
+
+}
+
+    
+
+
+
 
  
 
     
 
-}
