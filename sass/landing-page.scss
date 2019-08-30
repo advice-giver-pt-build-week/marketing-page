@@ -9,7 +9,6 @@ body {
     h1, h2 {
 
         font-family: $oswald;
-
     }
 
     .logo {
@@ -36,9 +35,6 @@ body {
                 max-height: unquote("calc(100% - 50px)");
                 margin-top: 10%;
                 align-self: center;
-                
-                
-
         }
 
         div {
@@ -49,10 +45,8 @@ body {
 
                 flex: 0 0 auto;
                 text-align: center; 
-                border: 2px solid black; 
                 padding: 12% 12% 9% 12%;
                 margin: 0;
-                background-color: $drk-blue;
                 color: $base-color;
                 margin: 15% 0;
                 font-weight: bold;
@@ -68,14 +62,10 @@ body {
 
         display: none;
         
-
         a:hover {
-    
-            
+              
             color: palevioletred;
-            text-decoration: none;
-            
-        
+            text-decoration: none;       
         }
 
         @media (min-width: 768px){
@@ -89,25 +79,16 @@ body {
 
             img {
 
-                max-width:  unquote("calc(35% - 50px)");
-               
-                
-
+                max-width:  unquote("calc(35% - 50px)");  
             }
-            a {
-                flex: 0 0 auto;
-                text-align: center; 
-               
-                padding: 5% 5% 3% 5%;
-                margin: 0;
-               
-                color: $base-color;
-               
-                
-                //box-shadow: 0 16px 3
 
-            
-                
+            a {
+
+                flex: 0 0 auto;
+                text-align: center;  
+                padding: 5% 5% 3% 5%;
+                margin: 0;  
+                color: $base-color;                
             }
 
 
@@ -148,9 +129,7 @@ body {
 
                
                 display: flex;
-                flex-basis: 85%;
-
-                
+                flex-basis: 85%;             
             }
 
             .button {
@@ -158,7 +137,6 @@ body {
                 
                 flex-basis: 15%;
                 
-
                 a {
 
                    padding: 5% 4% 5% 4%;
@@ -182,8 +160,7 @@ body {
 
             object-fit: contain;
             max-width:  unquote("calc(100% - 50px)");
-            max-height: unquote("calc(100% - 50px)");
-            
+            max-height: unquote("calc(100% - 50px)");           
             align-self: center;
 
         }
@@ -211,11 +188,16 @@ body {
             color: $drk-blue; 
             font-size: 3vw;
             text-align: left;
-            padding: 0 3%;
+            padding: 2% 3%;
+            margin: 0 2%;
+            margin-top: 2%;
             line-height: 1.3;
-            
+            border: 1px dashed $grey;
+        }
 
-         
+        h1 {
+
+            font-size: 3vw; 
         }
 
         img {
@@ -246,16 +228,12 @@ body {
                 display: inherit;
                 max-width:  unquote("calc(100% - 50px)");
                 max-height: unquote("calc(100% - 50px)");
-                transition: scale(2);
-                
-
-            
+                transition: scale(2);                
             }
 
             .row {
 
-                padding: 5%;
-                
+                padding: 5%;  
             }
 
             .column-1 {
@@ -278,7 +256,6 @@ body {
                 p {
                     margin-top: 5%;
                     padding: 5%;
-                   
                 }
             }
         }
@@ -301,13 +278,11 @@ body {
                 display: inherit;
                 max-width:  unquote("calc(50%)");
                 max-height: unquote("calc(50%)");
-
             }
 
             h1{
 
-                font-size: 6vh;
-                
+                font-size: 6vh;   
             }
 
             h2{
@@ -327,7 +302,6 @@ body {
                     flex-flow: column;
                     justify-content: center;
                     align-items: center;
-
                 }
 
                 .column-1 {
@@ -349,38 +323,32 @@ body {
 
         @include outside-structure;
         margin-bottom: 5%;
-        
         display:none;
        
+        .carousel-indicators {
+
+            margin-top: 2%;
+        }
         
         
         .carousel-inner {
 
-           
-        
             .carousel-item {
 
-                .carousel-caption {
-
-                    color: palevioletred;
-                    font-size: 100%;
-                }
 
                 img {
 
                     max-width: unquote("calc(50%-5px)");
                     max-height: unquote("calc(50%-5px)");
-                    object-fit: cover;
-                    
-                    
+                    object-fit: cover;                    
                 }
                 
 
                 p{ 
 
                     display: inline;
-                    color: palevioletred;
-                    font-size: 100%;
+                    color: $base-color;
+                    text-shadow: -1px -1px 0 $light-blue, 1px -1px 0 $light-blue, -1px 1px 0 $light-blue, 1px 1px 0 $light-blue;
                     margin: 0;
                 }
             }
@@ -397,7 +365,13 @@ body {
 
                 
                     p {
-                        font-size: 1.2vh;
+                        font-size: 4vh;
+                        text-align: left;
+                    }
+
+                    img {
+
+                        max-height: 388.75px;
                     }
                 }
             }
@@ -412,7 +386,8 @@ body {
                 .carousel-item{
                 
                     p {
-                        font-size: 2vh;
+                        font-size: 6vh;
+                        text-align: left;
                     }
 
                     img {
@@ -431,14 +406,28 @@ body {
         text-align: center;
         color: $base-color;
 
+        h1 {
+
+            display: inline;
+            border-bottom: 1px solid $base-color;
+            padding: 0 2%;
+        }
+
         p {
 
             text-align: left;
             font-size: 3vw;
-            color: $light-blue;
-
-            
+            color: $grey;
+            background-color: $base-color;
+            padding: 3% 5%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+            border: 1px solid $light-blue;
+            margin-top: 1rem;
+            margin-bottom: 0;
+           
         }
+
+        
 
         @media(min-width:768px){
 
@@ -455,7 +444,6 @@ body {
         justify-content: center;
         border: 2px solid black;
         background-color: $light-blue;
-       
         z-index: 100;
 
         @media (min-width: 768px) {
@@ -472,8 +460,6 @@ body {
             background-color: $grey;
             color: $base-color;
             font-weight: bold;
-            
-         
         }
 
         a:hover {
@@ -481,14 +467,8 @@ body {
             background-color: $base-color;
             color: $grey;
             text-decoration: none;
-        
         }
     
-
-        
-
-
     }
-
     
 }

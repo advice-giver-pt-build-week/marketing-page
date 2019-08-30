@@ -6,7 +6,7 @@ body h1, body h2 {
 
 body .logo {
   margin: 3% auto 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #44525A;
@@ -29,10 +29,8 @@ body .logo {
     body .logo div a {
       flex: 0 0 auto;
       text-align: center;
-      border: 2px solid black;
       padding: 12% 12% 9% 12%;
       margin: 0;
-      background-color: #0D3F5A;
       color: #f5f5f5;
       margin: 15% 0;
       font-weight: bold; }
@@ -46,7 +44,7 @@ body .logo-signup {
     body .logo-signup {
       display: flex;
       margin: 3% auto 0 auto;
-      max-width: 1200px;
+      max-width: 1500px;
       width: 90%;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       height: 8%;
@@ -88,7 +86,7 @@ body .logo-signup {
 
 body .image {
   margin: 3% auto 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 33%;
@@ -107,7 +105,7 @@ body .image {
 
 body .first-add-content {
   margin: 3% auto 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 45%;
@@ -122,8 +120,13 @@ body .first-add-content {
     color: #0D3F5A;
     font-size: 3vw;
     text-align: left;
-    padding: 0 3%;
-    line-height: 1.3; }
+    padding: 2% 3%;
+    margin: 0 2%;
+    margin-top: 2%;
+    line-height: 1.3;
+    border: 1px dashed #44525A; }
+  body .first-add-content h1 {
+    font-size: 3vw; }
   body .first-add-content img {
     display: none; }
   @media (min-width: 768px) {
@@ -190,47 +193,60 @@ body .first-add-content {
 
 body #carouselExampleCaptions {
   margin: 3% auto 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 5%;
   display: none; }
-  body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
-    color: palevioletred;
-    font-size: 100%; }
+  body #carouselExampleCaptions .carousel-indicators {
+    margin-top: 2%; }
   body #carouselExampleCaptions .carousel-inner .carousel-item img {
     max-width: calc(50%-5px);
     max-height: calc(50%-5px);
     object-fit: cover; }
   body #carouselExampleCaptions .carousel-inner .carousel-item p {
     display: inline;
-    color: palevioletred;
-    font-size: 100%;
+    color: #f5f5f5;
+    text-shadow: -1px -1px 0 #3697CA, 1px -1px 0 #3697CA, -1px 1px 0 #3697CA, 1px 1px 0 #3697CA;
     margin: 0; }
   @media (min-width: 768px) {
     body #carouselExampleCaptions {
       display: block; }
       body #carouselExampleCaptions .carousel-inner .carousel-item p {
-        font-size: 1.2vh; } }
+        font-size: 4vh;
+        text-align: left; }
+      body #carouselExampleCaptions .carousel-inner .carousel-item img {
+        max-height: 388.75px; } }
   @media (min-width: 992px) {
     body #carouselExampleCaptions .carousel-inner .carousel-item p {
-      font-size: 2vh; }
+      font-size: 6vh;
+      text-align: left; }
     body #carouselExampleCaptions .carousel-inner .carousel-item img {
       max-height: 30vw; } }
 
 body .feature-div {
   margin: 3% auto 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: #44525A;
   padding: 2.5% 3%;
   text-align: center;
   color: #f5f5f5; }
+  body .feature-div h1 {
+    display: inline;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 2%; }
   body .feature-div p {
     text-align: left;
     font-size: 3vw;
-    color: #3697CA; }
+    color: #44525A;
+    background-color: #f5f5f5;
+    padding: 3% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #3697CA;
+    margin-top: 1rem;
+    margin-bottom: 0; }
   @media (min-width: 768px) {
     body .feature-div {
       display: none; } }
@@ -266,7 +282,7 @@ body .sticky-login {
 
 .bio .header-bio {
   margin: 3% auto 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
@@ -280,7 +296,7 @@ body .sticky-login {
 
 .bio .img-profiles {
   margin: 3% auto 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #f5f5f5;
