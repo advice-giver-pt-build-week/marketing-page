@@ -9,6 +9,8 @@
 
     .bio-logo {
         margin-top: 0%;
+
+
     }
 
     .logo-signup {
@@ -48,6 +50,11 @@
         margin: 0 auto;
         height: 80%;
         background-color: $light-blue;
+
+        h1 {
+
+            font-family: $oswald;
+        }
 
         a {
             
