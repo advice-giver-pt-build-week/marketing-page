@@ -192,9 +192,8 @@ body #carouselExampleCaptions {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 5%;
   display: none; }
-  body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
-    color: palevioletred;
-    font-size: 100%; }
+  body #carouselExampleCaptions .carousel-indicators {
+    margin-top: 2%; }
   body #carouselExampleCaptions .carousel-inner .carousel-item img {
     max-width: calc(50%-5px);
     max-height: calc(50%-5px);
@@ -203,7 +202,6 @@ body #carouselExampleCaptions {
     display: inline;
     color: #f5f5f5;
     text-shadow: -1px -1px 0 #3697CA, 1px -1px 0 #3697CA, -1px 1px 0 #3697CA, 1px 1px 0 #3697CA;
-    font-size: 100%;
     margin: 0; }
   @media (min-width: 768px) {
     body #carouselExampleCaptions {
