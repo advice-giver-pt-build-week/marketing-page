@@ -1,9 +1,7 @@
 body p, body a {
   font-family: "Quicksand", sans-serif; }
-
 body h1, body h2 {
   font-family: "Oswald", sans-serif; }
-
 body .logo {
   margin: 3% auto 0 auto;
   max-width: 1500px;
@@ -34,7 +32,6 @@ body .logo {
       color: #f5f5f5;
       margin: 15% 0;
       font-weight: bold; }
-
 body .logo-signup {
   display: none; }
   body .logo-signup a:hover {
@@ -83,7 +80,6 @@ body .logo-signup {
         flex-basis: 15%; }
         body .logo-signup .button a {
           padding: 5% 4% 5% 4%; } }
-
 body .image {
   margin: 3% auto 0 auto;
   max-width: 1500px;
@@ -102,7 +98,6 @@ body .image {
   @media (min-width: 768px) {
     body .image {
       display: none; } }
-
 body .first-add-content {
   margin: 3% auto 0 auto;
   max-width: 1500px;
@@ -190,7 +185,6 @@ body .first-add-content {
         border-bottom: none; }
       body .first-add-content .row .column-2 {
         border-bottom: none; } }
-
 body #carouselExampleCaptions {
   margin: 3% auto 0 auto;
   max-width: 1500px;
@@ -223,7 +217,6 @@ body #carouselExampleCaptions {
       text-align: left; }
     body #carouselExampleCaptions .carousel-inner .carousel-item img {
       max-height: 30vw; } }
-
 body .feature-div {
   margin: 3% auto 0 auto;
   max-width: 1500px;
@@ -250,7 +243,6 @@ body .feature-div {
   @media (min-width: 768px) {
     body .feature-div {
       display: none; } }
-
 body .sticky-login {
   position: sticky;
   bottom: 0;
@@ -277,9 +269,26 @@ body .sticky-login {
     color: #44525A;
     text-decoration: none; }
 
+.bio .logo {
+  padding: 3% 0; }
 .bio .bio-logo {
   margin-top: 0%; }
-
+.bio .logo-signup {
+  width: 100%;
+  margin-top: 0%; }
+  .bio .logo-signup .image-div {
+    flex-basis: 85%;
+    display: flex;
+    justify-content: flex-start; }
+  .bio .logo-signup .button {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: space-around;
+    align-items: center;
+    color: #f5f5f5; }
+    .bio .logo-signup .button p {
+      margin: 0;
+      align-self: center; }
 .bio .header-bio {
   margin: 3% auto 0 auto;
   max-width: 1500px;
@@ -289,11 +298,23 @@ body .sticky-login {
   margin: 0 auto;
   height: 80%;
   background-color: #3697CA; }
-
+  .bio .header-bio a {
+    text-decoration: none;
+    color: #f5f5f5;
+    display: block;
+    padding-bottom: 2%;
+    font-weight: bold; }
+    .bio .header-bio a:hover {
+      color: palevioletred; }
+  @media (min-width: 768px) {
+    .bio .header-bio {
+      width: 100%; }
+      .bio .header-bio a {
+        display: none; } }
 .bio .name-header {
   font-size: 2rem;
-  font-family: "Oswald", sans-serif; }
-
+  font-family: "Oswald", sans-serif;
+  padding: 2% 0; }
 .bio .img-profiles {
   margin: 3% auto 0 auto;
   max-width: 1500px;
@@ -302,34 +323,56 @@ body .sticky-login {
   color: #f5f5f5;
   padding: 2%;
   display: flex;
-  flex-flow: column; }
-
-.bio .bio-containers {
-  display: flex;
-  border: 2px solid black;
-  background-color: #44525A;
-  margin: 3% auto;
-  width: 90%; }
-
+  flex-flow: column nowrap; }
+  .bio .img-profiles .bio-containers {
+    display: flex;
+    border: 2px solid #0D3F5A;
+    background-color: #44525A;
+    margin: 3% auto;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .bio .img-profiles .bio-containers .bio-info {
+      margin: 3% 0; }
+      .bio .img-profiles .bio-containers .bio-info img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .bio .img-profiles .bio-containers .bio-info .text-content p {
+        font-size: 3vw; }
+      @media (min-width: 768px) {
+        .bio .img-profiles .bio-containers .bio-info {
+          display: flex;
+          flex-flow: row;
+          justify-content: flex-start; }
+          .bio .img-profiles .bio-containers .bio-info img {
+            max-width: 119.25px;
+            max-height: 119.25px;
+            min-width: 119.25px;
+            min-height: 119.25px; }
+          .bio .img-profiles .bio-containers .bio-info .text-content {
+            margin-left: 2%;
+            background-color: #f5f5f5;
+            color: #44525A;
+            padding-left: 2%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+            .bio .img-profiles .bio-containers .bio-info .text-content p {
+              font-size: 1vw; } }
 .bio .aaron {
   background-color: #3697CA; }
-
 .bio .bio-info {
   display: flex;
   flex-flow: column nowrap;
   padding: 2%; }
-
 .bio .h2 {
   text-align: center;
   padding-top: 2%; }
-
 .bio .p {
   text-align: left;
   padding-top: 2%;
   width: 100%; }
-
-.bio .voldorb-img {
+.bio .images-bio {
   width: 40%;
   align-self: center; }
+.bio .sticky-login a {
+  font-family: "Quicksand", sans-serif;
+  color: #f5f5f5; }
 
 /*# sourceMappingURL=styles.css.map */
